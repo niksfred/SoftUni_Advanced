@@ -8,7 +8,8 @@ for row in range(rows):
 
 for i in range(rows -1 , 0, -1):
     for j in range(columns - 1 , 0, -1):
-        current_sum = matrix[i-1][j-1] + matrix[i-1][j] + matrix[i][j-1] + matrix[i][j]
+        current_sum = matrix[i-1][j-1] + matrix[i-1][j] + \
+                      matrix[i][j-1] + matrix[i][j]
         if current_sum >= result:
             result = current_sum
             position = [i, j]
