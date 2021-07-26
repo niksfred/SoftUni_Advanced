@@ -19,10 +19,10 @@ class Profile:
         stars = "*" * len(self.password)
         return f"You have a profile with username: \"{self.username}\" and password: {stars}"
 
-#profile_with_invalid_password = Profile('My_username', 'My-password')
-#print(profile_with_invalid_password)
+profile_with_invalid_password = Profile('My_username', 'My-password')
+print(profile_with_invalid_password)
 
-#profile_with_invalid_username = Profile('Too_long_username', 'Any')
+profile_with_invalid_username = Profile('Too_long_username', 'Any')
 
 correct_profile = Profile("Username", "Passw0rd")
 print(correct_profile)
