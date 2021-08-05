@@ -13,7 +13,7 @@ class ExercisePlan:
     
     @classmethod
     def from_hours(cls, trainer_id: int, equipment_id: int, hours: int):
-        duration = int(hours * 60)
+        duration = hours * 60
         return cls(trainer_id, equipment_id, duration)
     
     def __repr__(self) -> str:
