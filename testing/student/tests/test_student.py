@@ -33,7 +33,7 @@ class StudentTests(TestCase):
         self.assertEqual("Course and course notes have been added." ,res)
         self.assertEqual({"Physics": ["note1"]} ,self.student.courses)
 
-    def test_student_enroll_new_course_and_yes`_update_notes(self):
+    def test_student_enroll_new_course_and_yes_update_notes(self):
         res = self.student.enroll("Physics", ["note1"] , "Y")
         self.assertEqual("Course and course notes have been added." ,res)
         self.assertEqual({"Physics": ["note1"]} ,self.student.courses)  
