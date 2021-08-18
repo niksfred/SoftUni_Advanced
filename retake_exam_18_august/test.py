@@ -1,0 +1,1 @@
+print(type({x for x in range(1,4)}))
